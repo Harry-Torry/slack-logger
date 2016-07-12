@@ -26,6 +26,18 @@
         );
 
         (new Message($data->getData()))->save();
+        $client
+            ->getDMById('@HKAN ID goes here')
+            ->then(function (\Slack\Channel $channel) use ($client, $data) {
+                $message = sprintf(
+                  '%s %s: %s',
+                    'new message from:',
+                    $data->user,
+                    $data->text
+                );
+
+                $client->send($message, $channel);
+            });
     });
 
     $client->connect()->then(function () {
