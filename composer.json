@@ -1,0 +1,8 @@
+{
+    "require": {
+        "coderstephen/slack-client": "^0.2.4",
+        "illuminate/database": "^5.2"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
