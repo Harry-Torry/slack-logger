@@ -1,8 +1,15 @@
 {
     "require": {
         "coderstephen/slack-client": "^0.2.4",
-        "illuminate/database": "^5.2"
+        "illuminate/database": "^5.2",
+        "vlucas/phpdotenv": "^2.3"
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "HarryTorry\\": "src/HarryTorry/",
+            "HarryTorry\\SlacKeep\\": "src/HarryTorry/SlacKeep"
+        }
+    }
 }
