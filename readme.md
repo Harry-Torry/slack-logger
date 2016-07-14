@@ -1,6 +1,6 @@
 # Logging slack messages to a DB
 
-* Fill in the DB fields and give it a slack token (can get it from here - https://api.slack.com/methods/rtm.start/test)
+* Create a custom integration and get your slack api token
+* Create your `.env` and fill in the details
+* run `php server.php migrate`
 * Run `php server.php`
-* Comment out `migrationUp();`
-* Watch as your DB fills up!
